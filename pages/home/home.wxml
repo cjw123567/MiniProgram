@@ -1,2 +1,11 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<!-- 1 小程序数据绑定 {{}}->Mustache -->
+<view>Hello {{name}}</view>
+
+<!-- 2 列表展示 wx:for 循环数据 -->
+<view wx:for="{{students}}">{{item.id}}--{{item.name}}--{{item.age}}</view>
+
+<!-- 3 时间监听改变data -->
+<view>计算数值{{counter}}</view>
+<button size="mini" bindtap="handleBtnClick">+</button>
+<button size="mini" bindtap="handleBtnSubClick">-</button>
