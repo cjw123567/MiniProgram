@@ -1,6 +1,37 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/about/about"
-  ]
+    "pages/about/about",
+    "pages/profile/profile",
+    "pages/category/category"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "陈某某",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "borderStyle":"white",
+    
+    "selectedColor":"#888888",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "assest/home.jpg",
+      "selectedIconPath": "assest/homeSelect.jpg"
+    },{
+      "pagePath": "pages/category/category",
+      "text": "分类",
+      "iconPath": "assest/list.jpg",
+      "selectedIconPath": "assest/listSelect.jpg"
+    },{
+      "pagePath": "pages/profile/profile",
+      "text": "用户",
+      "iconPath": "assest/profile.jpg",
+      "selectedIconPath": "assest/profileSelect.jpg"
+    }]
+  }
 }
