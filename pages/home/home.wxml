@@ -1,2 +1,8 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view class="box"
+      bind:touchstart="handleTouchStart"
+      bind:touchmove="handleTouchMove"
+      bind:touchend="handleTouchEnd"
+      bind:tap="handleTap"
+      bind:longpress="handleLongpress"></view>
+
